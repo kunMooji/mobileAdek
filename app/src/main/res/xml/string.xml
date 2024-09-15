@@ -1,0 +1,9 @@
+<resources>
+    <!-- Other string resources -->
+
+    <string-array name="activity_options">
+        <item>Pekerja</item>
+        <item>Siswa</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>

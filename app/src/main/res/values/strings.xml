@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string-array name="activity_options" />
+</resources>
