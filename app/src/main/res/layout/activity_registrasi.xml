@@ -1,14 +1,35 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:scaleType="fitStart"
+        android:src="@drawable/bg_atas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="210dp"
+        android:text="Registrasi"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"/>
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_gravity="center"
         android:layout_margin="16dp"
         android:padding="16dp"
         app:cardElevation="4dp"
@@ -68,17 +89,26 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Register"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="20dp"
-                android:padding="12dp"/>
+                android:padding="12dp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-</RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bg_bawah" />
+
+</FrameLayout>

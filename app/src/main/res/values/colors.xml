@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="hijau_button">#557C56</color>
+    <color name="coklat">#514141</color>
 </resources>
