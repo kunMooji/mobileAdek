@@ -97,24 +97,24 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_diet"
-                        android:contentDescription="Rencana Diet"/>
+                        android:contentDescription="Rencana Diet"
+                        android:src="@drawable/ic_diet" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:text="Rencana Diet"
-                        android:textSize="18sp"
                         android:textColor="#000"
-                        android:layout_marginTop="8dp"/>
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:text="Atur pola makan dan kalori harian Anda untuk mencapai tujuan diet yang sehat."
-                        android:textSize="14sp"
                         android:textColor="#777"
-                        android:layout_marginTop="4dp"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -128,7 +128,7 @@
 
                 <!-- Feature 2: Kalkulasi Kalori -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardCalorie"
+                    android:id="@+id/card30Hari"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
@@ -152,7 +152,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kalkulasi Kalori"
+                            android:text="Menu Harian Kamu"
                             android:textSize="18sp"
                             android:textColor="#000"
                             android:layout_marginTop="8dp"/>

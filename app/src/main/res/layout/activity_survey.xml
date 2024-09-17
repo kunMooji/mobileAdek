@@ -64,6 +64,38 @@
                         android:hint="Jumlah Makanan"
                         android:inputType="number" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Makanan"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgFoodType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbHealthy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sehat" />
+
+                        <RadioButton
+                            android:id="@+id/rbJunkFood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Junk Food" />
+
+                        <RadioButton
+                            android:id="@+id/rbMixed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Campuran" />
+                    </RadioGroup>
+
                     <Button
                         android:id="@+id/btnNextActivity"
                         android:layout_width="match_parent"
@@ -123,6 +155,47 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Durasi Tidur"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Apakah Anda merasa stres?"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgStress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbYesStress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ya" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoStress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Berapa banyak air yang Anda minum hari ini? (Liter)"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etWater"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah Air (Liter)"
                         android:inputType="numberDecimal" />
 
                     <Button
