@@ -43,8 +43,10 @@ public class DashboardActivity extends AppCompatActivity {
 
         // Set onClickListener untuk cardInfo
         cardInfo.setOnClickListener(a -> {
+            String username2 = textViewCardInfo.getText().toString();
             // Pindah ke ProfileActivity
             Intent profileIntent = new Intent(DashboardActivity.this, ProfileActivity.class);
+            profileIntent.putExtra("username", username);
             startActivity(profileIntent);
         });
 

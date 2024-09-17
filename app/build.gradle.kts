@@ -40,9 +40,12 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.cardview)
 
+
     // Menambahkan Volley Untuk Requst HTTP
     implementation("com.android.volley:volley:1.2.1")
     implementation(libs.gridlayout)
+    implementation ("com.google.android.material:material:1.9.0")
+
 
 
     // Dependensi pengujian

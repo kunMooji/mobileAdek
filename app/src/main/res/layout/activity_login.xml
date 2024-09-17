@@ -13,17 +13,10 @@
         android:scaleType="fitStart"
         android:src="@drawable/bg_atas" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="150dp"
-        android:text="Login"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:fontFamily="serif"/>
+
 
     <androidx.cardview.widget.CardView
+
         android:id="@+id/cardViewLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,10 +27,22 @@
         app:cardElevation="4dp"
         app:cardCornerRadius="8dp">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="20dp"
+                android:text="Login"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
 
             <EditText
                 android:id="@+id/editTextUsername"
@@ -77,6 +82,20 @@
                 android:background="@drawable/rounded_button"
                 android:padding="12dp"/>
 
+            <TextView
+                android:id="@+id/textViewSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardViewLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="125dp"
+                android:layout_marginBottom="25dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="10dp"
+                android:text="Belum punya akun? Sign Up"
+                android:textColor="@android:color/holo_blue_dark" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <ImageView
@@ -85,19 +104,4 @@
         android:layout_gravity="bottom"
         android:scaleType="fitEnd"
         android:src="@drawable/bg_bawah" />
-
-    <TextView
-        android:id="@+id/textViewSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/cardViewLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="bottom"
-        android:layout_marginStart="125dp"
-        android:layout_marginBottom="200dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:paddingTop="16dp"
-        android:text="Belum punya akun? Sign Up"
-        android:textColor="@android:color/holo_blue_dark" />
 </FrameLayout>
